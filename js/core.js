@@ -31,7 +31,16 @@ export function getPageLabel(index) {
 // CORE RENDER
 export function renderToCanvas(ctx, title, content, pageData = {}, forceLabels = false) {
     if (!ctx) return;
-    ctx.fillStyle = pageData.bgColor || '#ffffff';
+
+    const isPreview = window.MaestroPreview && window.MaestroPreview.active === true;
+
+    // DEFAULT COLOR: Preview modundaysak ve renk atanmamışsa Cyan olsun
+    let bg = pageData.bgColor || '#ffffff';
+    if (isPreview && !pageData.bgColor) {
+        bg = '#00ffcc';
+    }
+
+    ctx.fillStyle = bg;
     ctx.fillRect(0, 0, a4Width, a4Height);
 
     if (pageData.image) {
@@ -66,7 +75,6 @@ export function renderToCanvas(ctx, title, content, pageData = {}, forceLabels =
         }
     }
 
-    const isPreview = window.MaestroPreview && window.MaestroPreview.active === true;
     if (!isPreview || forceLabels) {
         ctx.save();
         ctx.fillStyle = '#666';

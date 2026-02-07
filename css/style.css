@@ -686,7 +686,14 @@ body.preview-mode .a4-half {
 }
 
 body.preview-mode .canvas-container {
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+    background: #00ffcc;
+    box-shadow: 0 0 100px rgba(0, 255, 204, 0.3), 0 30px 80px rgba(0, 0, 0, 0.9);
+    border-color: #00ffcc;
+}
+
+body.preview-mode .main {
+    background: #001a1a;
+    /* Derin okyanus rengi, ortamın değiştiğini hissetmek için */
 }
 
 /* 14. Recovery Card Styles */

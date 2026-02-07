@@ -1,4 +1,5 @@
-import { state, renderToCanvas, saveHistory, loadPage } from './core.js';
+import { state, renderToCanvas, loadPage } from './core.js';
+import { saveHistory } from './history.js';
 
 export function showProjectModal(title, projects, isSaveMode, callback) {
     const overlay = document.createElement('div');
