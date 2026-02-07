@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maestro Editör - Premium Architecture</title>
+  <link rel="stylesheet" href="./css/style.css?v=53">
+  <link rel="stylesheet" href="./css/pagebar.css?v=53">
+</head>
+
+<body>
+  <aside class="sidebar">
+    <h2>Kontroller</h2>
+    <div class="zoom-controls">
+      <button id="zoomOut">-</button>
+      <button id="zoomIn">+</button>
+    </div>
+    <button id="saveBtn">Save</button>
+    <button id="loadBtn">Load</button>
+    <button id="undoBtn">Undo</button>
+    <button id="redoBtn">Redo</button>
+    <button id="previewBtn">PREVIEW</button>
+    <button id="exportBtn">Dijital Export</button>
+    <button id="pngExportBtn">PNG Export</button>
+  </aside>
+
+  <aside class="pagebar">
+    <div class="pagebar-header">
+      <button id="addPage">+ New Blank Page</button>
+      <button id="insertPage">+ Insert Page</button>
+      <div id="totalPageDisplay" class="total-page-badge">Total Page: 0</div>
+    </div>
+    <div id="thumbnails" class="thumbnails-container">
+      <!-- Thumbnails dynamic -->
+    </div>
+  </aside>
+
+  <main class="main" id="mainArea">
+    <div class="viewport" id="viewport">
+      <div class="canvas-container" id="canvasContainer">
+        <div class="a4-half">
+          <div class="spread-shadow left"></div>
+          <canvas id="canvasLeft"></canvas>
+        </div>
+        <div class="a4-half">
+          <div class="spread-shadow right"></div>
+          <canvas id="canvasRight"></canvas>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="./js/recovery_manager.js?v=53"></script>
+  <script src="./js/preview_manager.js?v=53"></script>
+  <script src="./js/app.js?v=53" type="module"></script>
+  <script src="./js/page_style_menu.js?v=53"></script>
+  <script src="./js/picture_style_menu.js?v=53"></script>
+</body>
+
+</html>

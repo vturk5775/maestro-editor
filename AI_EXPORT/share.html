@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maestro Editör - Premium Architecture</title>
+  <link rel="stylesheet" href="./css/style.css?v=53">
+  <link rel="stylesheet" href="./css/pagebar.css?v=53">
+</head>
+
+<body>
+  <aside class="sidebar">
+    <h2>Kontroller</h2>
+    <div class="zoom-controls">
+      <button id="zoomOut">-</button>
+      <button id="zoomIn">+</button>
+    </div>
+    <button id="saveBtn">Save</button>
+    <button id="loadBtn">Load</button>
+    <button id="undoBtn">Undo</button>
+    <button id="redoBtn">Redo</button>
+    <button id="previewBtn">PREVIEW</button>
+    <button id="exportBtn">Dijital Export</button>
+    <button id="pngExportBtn">PNG Export</button>
+  </aside>
+
+  <aside class="pagebar">
+    <div class="pagebar-header">
+      <button id="addPage">+ New Blank Page</button>
+      <button id="insertPage">+ Insert Page</button>
+      <div id="totalPageDisplay" class="total-page-badge">Total Page: 0</div>
+    </div>
+    <div id="thumbnails" class="thumbnails-container">
+      <!-- Thumbnails dynamic -->
+    </div>
+  </aside>
+
+  <main class="main" id="mainArea">
+    <div class="viewport" id="viewport">
+      <div class="canvas-container" id="canvasContainer">
+        <div class="a4-half">
+          <div class="spread-shadow left"></div>
+          <canvas id="canvasLeft"></canvas>
+        </div>
+        <div class="a4-half">
+          <div class="spread-shadow right"></div>
+          <canvas id="canvasRight"></canvas>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="./js/recovery_manager.js?v=53"></script>
+  <script src="./js/preview_manager.js?v=53"></script>
+  <script src="./js/app.js?v=53" type="module"></script>
+  <script src="./js/page_style_menu.js?v=53"></script>
+  <script src="./js/picture_style_menu.js?v=53"></script>
+
+<!-- 
+     GROK/AI ANALİZİ İÇİN GİZLİ PROJE VERİSİ 
+     Aşağıdaki div tamamen gizlidir, sadece kaynak kodda görünür.
+-->
+<div id="ai-project-context" style="display:none !important;" aria-hidden="true">
+# MAESTRO PROJECT CONTEXT
+
+Generated on: 2/7/2026, 7:38:38 PM
+
+## File: index.html
+
+```html
+&lt;!DOCTYPE html&gt;
+&lt;html lang="tr"&gt;
+
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Maestro Editör - Premium Architecture&lt;/title&gt;
+  &lt;link rel="stylesheet" href="./css/style.css?v=53"&gt;
+  &lt;link rel="stylesheet" href="./css/pagebar.css?v=53"&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;aside class="sidebar"&gt;
+    &lt;h2&gt;Kontroller&lt;/h2&gt;
+    &lt;div class="zoom-controls"&gt;
+      &lt;button id="zoomOut"&gt;-&lt;/button&gt;
+      &lt;button id="zoomIn"&gt;+&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;button id="saveBtn"&gt;Save&lt;/button&gt;
+    &lt;button id="loadBtn"&gt;Load&lt;/button&gt;
+    &lt;button id="undoBtn"&gt;Undo&lt;/button&gt;
+    &lt;button id="redoBtn"&gt;Redo&lt;/button&gt;
+    &lt;button id="previewBtn"&gt;PREVIEW&lt;/button&gt;
+    &lt;button id="exportBtn"&gt;Dijital Export&lt;/button&gt;
+    &lt;button id="pngExportBtn"&gt;PNG Export&lt;/button&gt;
+  &lt;/aside&gt;
+
+  &lt;aside class="pagebar"&gt;
+    &lt;div class="pagebar-header"&gt;
+      &lt;button id="addPage"&gt;+ New Blank Page&lt;/button&gt;
+      &lt;button id="insertPage"&gt;+ Insert Page&lt;/button&gt;
+      &lt;div id="totalPageDisplay" class="total-page-badge"&gt;Total Page: 0&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div id="thumbnails" class="thumbnails-container"&gt;
+      &lt;!-- Thumbnails dynamic --&gt;
+    &lt;/div&gt;
+  &lt;/aside&gt;
+
+  &lt;main class="main" id="mainArea"&gt;
+    &lt;div class="viewport" id="viewport"&gt;
+      &lt;div class="canvas-container" id="canvasContainer"&gt;
+        &lt;div class="a4-half"&gt;
+          &lt;div class="spread-shadow left"&gt;&lt;/div&gt;
+          &lt;canvas id="canvasLeft"&gt;&lt;/canvas&gt;
+        &lt;/div&gt;
+        &lt;div class="a4-half"&gt;
+          &lt;div class="spread-shadow right"&gt;&lt;/div&gt;
+          &lt;canvas id="canvasRight"&gt;&lt;/canvas&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/main&gt;
+
+  &lt;script src="./js/recovery_manager.js?v=53"&gt;&lt;/script&gt;
+  &lt;script src="./js/preview_manager.js?v=53"&gt;&lt;/script&gt;
+  &lt;script src="./js/app.js?v=53" type="module"&gt;&lt;/script&gt;
+  &lt;script src="./js/page_style_menu.js?v=53"&gt;&lt;/script&gt;
+  &lt;script src="./js/picture_style_menu.js?v=53"&gt;&lt;/script&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+```
+
+---
+
+## File: css/style.css
+
+```css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+    background: #111;
+    color: #eee;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+
+/* 1. Bölüm: Sidebar (kontroller) */
+.sidebar {
+    width: 220px;
+    background: #1a1a2e;
+    padding: 20px;
+    border-right: 1px solid #333;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow-y: auto;
+    flex-shrink: 0;
+}
+
+.sidebar h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #00d4ff;
+}
+
+.sidebar button {
+    background: #0f3460;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.2s;
+}
+
+.sidebar button:hover {
+    background: #16213e;
+    transform: translateX(5px);
+}
+
+.sidebar button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.zoom-controls {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.zoom-controls button {
+    width: 60px;
+    padding: 10px;
+}
+
+/* Page Bar styles moved to pagebar.css */
+
+/* 3. Bölüm: Sayfa Detay Alanı */
+.main {
+    flex: 1;
+    background: #0f0f1a;
+    overflow: hidden;
+    /* Scrollbarlar gizlendi */
+    cursor: grab;
+    display: block;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE/Edge */
+}
+
+.main::-webkit-scrollbar {
+    display: none;
+    /* Chrome/Safari */
+}
+
+.main:active {
+    cursor: grabbing;
+}
+
+.viewport {
+    width: 6000px;
+    /* Dev bir alan sağa sola kaydırmak için */
+    height: 6000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: #0f0f1a;
+}
+
+.canvas-container {
+    display: flex;
+    flex-shrink: 0;
+    width: 420mm;
+    height: 297mm;
+    background: white;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+    border: 1px solid #ddd;
+    overflow: hidden;
+    transform-origin: center center;
+    transition: transform 0.15s ease-out;
+    user-select: none;
+}
+
+.a4-half {
+    width: 210mm;
+    height: 100%;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.a4-half canvas {
+    width: 100%;
+    height: 100%;
+    background: white;
+    image-rendering: crisp-edges;
+}
+
+.spread-shadow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 40px;
+    pointer-events: none;
+    z-index: 5;
+}
+
+/* Ortadaki ince gri çizgi */
+.a4-half:first-child .spread-shadow::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: rgba(0, 0, 0, 0.06);
+}
+
+/* Sol sayfa bitişindeki çok hafif gölge */
+.a4-half:first-child .spread-shadow {
+    right: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.03) 100%);
+}
+
+/* Sağ sayfa başlangıcındaki soft kıvrım */
+.a4-half:last-child .spread-shadow {
+    left: 0;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.06) 100%);
+}
+
+.a4-half:first-child::before,
+.a4-half:last-child::before {
+    content: attr(data-label);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #aaa;
+    font-size: 0.9rem;
+    pointer-events: none;
+}
+
+/* 5. Version Badge */
+.version-badge {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.9);
+    color: #00ffcc;
+    padding: 30px 60px;
+    border-radius: 15px;
+    font-size: 3rem;
+    font-weight: bold;
+    z-index: 10000;
+    pointer-events: none;
+    opacity: 1;
+    transition: opacity 1.2s ease-in;
+    border: 3px solid #00ffcc;
+    box-shadow: 0 0 40px rgba(0, 255, 204, 0.4);
+    font-family: monospace;
+}
+
+.version-badge.fade-out {
+    opacity: 0;
+}
+
+/* 6. Custom Modal & Project Grid */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20000;
+}
+
+.modal-content {
+    background: #0a0a0f;
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid #1e1e2d;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.8);
+    width: 90%;
+    max-width: 950px;
+    max-height: 85vh;
+    overflow-y: auto;
+    color: white;
+}
+
+.modal-content h3 {
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+    text-align: left;
+    color: #fff;
+    font-weight: 600;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.project-grid.vertical {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: none;
+}
+
+.project-card {
+    background: #11111d;
+    border: 1px solid #1e1e2d;
+    border-radius: 12px;
+    padding: 16px;
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-card:hover {
+    border-color: #00ffcc;
+    transform: translateX(5px);
+    background: #18182b;
+    box-shadow: 0 10px 25px rgba(0, 255, 204, 0.15);
+}
+
+.project-card:hover .delete-project-btn {
+    opacity: 1;
+}
+
+.project-card img {
+    width: 70px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 6px;
+    background: #000;
+    border: 1px solid #2a2a3d;
+}
+
+.project-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.project-name {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    display: block;
+    color: #eee;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.project-meta-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.project-date {
+    font-size: 0.75rem;
+    color: #777;
+    border: 1px solid #2a2a3d;
+    padding: 3px 10px;
+    border-radius: 6px;
+}
+
+.project-badge {
+    font-size: 0.75rem;
+    color: #00ffcc;
+    background: rgba(0, 255, 204, 0.08);
+    padding: 3px 10px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.project-badge::before {
+    content: "🌐";
+    font-size: 0.8rem;
+}
+
+.delete-project-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(255, 68, 68, 0.1);
+    color: #ff4444;
+    border: 1px solid rgba(255, 68, 68, 0.2);
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.2s;
+    z-index: 10;
+}
+
+.delete-project-btn:hover {
+    background: #ff4444 !important;
+    color: white !important;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 68, 68, 0.4);
+}
+
+.modal-input-area {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.modal-input {
+    width: 100%;
+    padding: 16px;
+    background: #161625;
+    border: 1px solid #2a2a3d;
+    color: white;
+    border-radius: 10px;
+    font-size: 1rem;
+    margin-top: 12px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.modal-input:focus {
+    border-color: #00ffcc;
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.1);
+}
+
+.modal-buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+}
+
+.modal-btn {
+    padding: 12px 28px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: 0.2s;
+}
+
+.modal-btn.primary {
+    background: #00ffcc;
+    color: #0a0a0f;
+}
+
+.modal-btn.secondary {
+    background: #1e1e2d;
+    color: #aaa;
+}
+
+.modal-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+/* 8. Page stats & Context Menu */
+.page-stats {
+    padding: 10px 0;
+    font-size: 0.85rem;
+    color: #888;
+    border-top: 1px solid #333;
+    margin-top: 12px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.context-menu {
+    position: fixed;
+    background: #12121e;
+    border: 1px solid #2a2a3d;
+    border-radius: 10px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.6);
+    z-index: 30000;
+    min-width: 200px;
+    padding: 8px 0;
+    display: none;
+}
+
+.context-menu h4 {
+    margin: 8px 16px 12px;
+    font-size: 0.7rem;
+    color: #5d5d75;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-bottom: 1px solid #222;
+    padding-bottom: 8px;
+}
+
+.menu-item {
+    padding: 12px 18px;
+    font-size: 0.95rem;
+    color: #d1d1e0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.2s;
+}
+
+.menu-item:hover {
+    background: #00ffcc;
+    color: #010101;
+    font-weight: 600;
+}
+
+/* 9. Page Interaction Overlays */
+.page-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    z-index: 1000;
+    pointer-events: auto;
+}
+
+.overlay-btn {
+    background: rgba(255, 255, 255, 0.95);
+    border: 2px solid #00ffcc;
+    color: #111;
+    padding: 16px 32px;
+    font-size: 1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    min-width: 240px;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
+.overlay-btn:hover {
+    background: #00ffcc;
+    color: #000;
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 15px 40px rgba(0, 255, 204, 0.4);
+}
+
+.overlay-btn.colour-btn {
+    border-color: #ff00ff;
+}
+
+.overlay-btn.colour-btn:hover {
+    background: #ff00ff;
+    border-color: #ff00ff;
+    box-shadow: 0 15px 40px rgba(255, 0, 255, 0.4);
+}
+
+/* 10. Photoshop-like Color Picker */
+.picker-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 50000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+}
+
+.picker-card {
+    background: #1e1e2d;
+    padding: 28px;
+    border-radius: 16px;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.9);
+    border: 1px solid #33334d;
+    width: 360px;
+}
+
+.picker-card h3 {
+    margin: 0 0 24px;
+    color: #fff;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    border-bottom: 3px solid #00ffcc;
+    padding-bottom: 12px;
+    display: inline-block;
+    width: 100%;
+}
+
+.color-preview-large {
+    width: 100%;
+    height: 120px;
+    border-radius: 10px;
+    margin-bottom: 24px;
+    border: 2px solid #33334d;
+    transition: background 0.1s;
+}
+
+.hex-input-group {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.hex-input {
+    flex: 1;
+    background: #0a0a0f;
+    border: 1px solid #33334d;
+    padding: 12px 16px;
+    color: #fff;
+    border-radius: 8px;
+    font-family: 'Courier New', monospace;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.hex-input:focus {
+    border-color: #00ffcc;
+}
+
+.native-color-trigger {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.picker-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.picker-actions button {
+    flex: 1;
+    padding: 14px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+
+.picker-confirm {
+    background: #00ffcc;
+    color: #000;
+}
+
+.picker-cancel {
+    background: #33334d;
+    color: #888;
+}
+
+.picker-actions button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+/* 11. Loading Spinner */
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 60000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(3px);
+    color: #00ffcc;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.spinner {
+    width: 60px;
+    height: 60px;
+    border: 5px solid rgba(0, 255, 204, 0.1);
+    border-left-color: #00ffcc;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 20px;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* 12. Edit Mode Indicator */
+.a4-half.editing {
+    outline: 4px solid #00ffcc;
+    outline-offset: -4px;
+    z-index: 2000;
+}
+
+.a4-half.editing::before {
+    content: "EDIT MODE: Arrows to Move | +/- to Scale | Enter to Save";
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #00ffcc;
+    color: #000;
+    padding: 4px 15px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    white-space: nowrap;
+    border-radius: 4px;
+    z-index: 2001;
+    box-shadow: 0 4px 15px rgba(0, 255, 204, 0.4);
+}
+
+/* 13. Preview Mode Enhancements */
+body.preview-mode .page-overlay,
+body.preview-mode .spread-shadow::after,
+body.preview-mode .thumb-actions,
+body.preview-mode .thumb-left-actions {
+    display: none !important;
+}
+
+body.preview-mode .a4-half {
+    cursor: default;
+}
+
+body.preview-mode .canvas-container {
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+}
+
+/* 14. Recovery Card Styles */
+.recovery-card {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%) !important;
+    border: 1px solid #00ffcc !important;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.recovery-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: #00ffcc;
+}
+
+.recovery-card .recovery-icon {
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 255, 204, 0.05);
+    height: 120px;
+}
+
+.recovery-badge {
+    background: #00ffcc !important;
+    color: #000 !important;
+}
+
+.recovery-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 255, 204, 0.2) !important;
+}
+```
+
+---
+
+## File: css/pagebar.css
+
+```css
+/* 2. Bölüm: Page Bar (thumbnail'lar) */
+.page-bar {
+    width: 200px;
+    background: #f4f4f4;
+    padding: 10px;
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-shrink: 0;
+    height: 100vh;
+}
+
+.page-bar::-webkit-scrollbar {
+    display: none;
+}
+
+.thumbnails {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex: 1;
+    padding: 10px 0;
+    position: relative;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.thumbnails::-webkit-scrollbar {
+    display: none;
+}
+
+/* Sürükle-Bırak Boşluğu (Placeholder) */
+.drag-placeholder {
+    width: 100%;
+    height: 130px;
+    background: rgba(0, 212, 255, 0.05);
+    border: 2px dashed #00d4ff;
+    border-radius: 8px;
+    pointer-events: none;
+    /* Animasyon titremeye neden olur, sildik */
+}
+
+.page-bar .thumbnail {
+    width: 100%;
+    aspect-ratio: 1.4;
+    background: #e1e1e1;
+    border-radius: 8px;
+    cursor: grab;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+}
+
+.page-bar .thumbnail.active {
+    background: #d1e8ff;
+    border: 2px solid #a3c9f1;
+}
+
+.page-bar .thumbnail.dragging-hidden {
+    display: none;
+}
+
+.page-bar .thumbnail img {
+    width: 50%;
+    height: auto;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    pointer-events: none;
+}
+
+.page-bar .thumbnail::after {
+    content: attr(data-page-num);
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.page-bar .thumb-actions {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: none;
+    gap: 4px;
+    z-index: 10;
+}
+
+.page-bar .thumb-left-actions {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    display: none;
+    gap: 4px;
+    z-index: 10;
+}
+
+.page-bar .thumbnail:hover .thumb-actions,
+.page-bar .thumbnail:hover .thumb-left-actions,
+.page-bar .thumbnail.active .thumb-actions,
+.page-bar .thumbnail.active .thumb-left-actions {
+    display: flex;
+}
+
+.page-bar .delete-btn,
+.page-bar .refresh-btn {
+    background: rgba(255, 255, 255, 0.8);
+    color: #000;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all 0.2s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.page-bar .delete-btn:hover,
+.page-bar .refresh-btn:hover {
+    transform: scale(1.2);
+}
+
+.page-bar .actions {
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    border-bottom: 1px dashed #bbb;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.page-bar .actions button {
+    width: 100%;
+    padding: 10px;
+    background: white;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+```
+
+---
+
+## File: js/app.js
+
+```js
+import { state, loadPage, renderToCanvas, getPageLabel } from './core.js';
+import { updateThumbnails, refreshThumb, deletePage, refreshAllThumbnails } from './pagebar.js';
+import { saveHistory } from './history.js';
+import { updateZoom, centerView } from './zoom-pan.js';
+import { handleImageUpload, openColorPicker } from './image-upload.js';
+import { autoSave, loadAutoSaved } from './persistence.js';
+import { showProjectModal, captureCoverThumbnail } from './ui-components.js';
+import { CURRENT_VERSION } from './constants.js';
+
+// Initialize state
+if (loadAutoSaved()) {
+    window.loadPage(state.currentPageId);
+} else {
+    window.loadPage(1001);
+}
+
+// Global function binding
+window.deletePage = deletePage;
+window.handleImageUpload = handleImageUpload;
+window.openColorPicker = openColorPicker;
+
+// UI Event Handlers
+document.getElementById('saveBtn').onclick = async (e) =&gt; {
+    if (e) e.preventDefault();
+    try {
+        const projects = await fetch('api/api_list.php').then(r =&gt; r.json());
+        showProjectModal("Proje Kaydet", projects, true, async (filename) =&gt; {
+            const thumbnail = await captureCoverThumbnail();
+            const projectData = { pages: state.pages, currentPageId: state.currentPageId, version: CURRENT_VERSION };
+            fetch('api/api_save.php', {
+                method: 'POST', headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename, projectData, thumbnail })
+            }).then(r =&gt; r.json()).then(res =&gt; {
+                if (res.success) alert("✅ kaydedildi."); else alert("❌ Hata.");
+            });
+        });
+    } catch (err) { alert("Hata: " + err.message); }
+};
+
+document.getElementById('loadBtn').onclick = async () =&gt; {
+    try {
+        const projects = await fetch('api/api_list.php').then(r =&gt; r.json());
+        showProjectModal("Proje Yükle", projects, false, (filename) =&gt; {
+            fetch(`saves/${filename}.json?v=${Date.now()}`).then(r =&gt; r.json()).then(data =&gt; {
+                saveHistory(); state.pages = data.pages; state.currentPageId = data.currentPageId;
+                window.loadPage(state.currentPageId);
+                if (typeof refreshAllThumbnails === 'function') refreshAllThumbnails();
+            }).catch(err =&gt; alert("Yükleme hatası: " + err.message));
+        });
+    } catch (err) { alert("Hata: " + err.message); }
+};
+
+// PAGE STYLE HANDLER
+window.handlePageStyleAction = (action, pageId) =&gt; {
+    const index = state.pages.findIndex(p =&gt; p.id == pageId);
+    if (index === -1) return;
+    saveHistory();
+    if (action === 'bgcolor' && typeof window.openColorPicker === 'function') {
+        window.openColorPicker(pageId, 'bgcolor');
+    }
+};
+
+// PICTURE STYLE HANDLER
+window.handlePictureStyleAction = (action, pageId) =&gt; {
+    const pageIndex = state.pages.findIndex(p =&gt; p.id == pageId);
+    if (pageIndex === -1) return;
+    const page = state.pages[pageIndex];
+
+    if (action === 'delete') {
+        if (!confirm("Resmi silmek istediğinizden emin misiniz?")) return;
+        saveHistory();
+        delete page.image;
+        delete page.imgX; delete page.imgY; delete page.imgScale;
+        window.loadPage(state.currentPageId);
+    } else if (action === 'zoomIn') {
+        saveHistory();
+        page.imgScale = (page.imgScale || 1) + 0.1;
+        window.loadPage(state.currentPageId);
+    } else if (action === 'zoomOut') {
+        saveHistory();
+        page.imgScale = Math.max(0.1, (page.imgScale || 1) - 0.1);
+        window.loadPage(state.currentPageId);
+    }
+};
+
+// Version Badge
+function showVersionSplash() {
+    const badge = document.createElement('div');
+    badge.className = 'version-badge'; badge.innerText = CURRENT_VERSION;
+    document.body.appendChild(badge);
+    setTimeout(() =&gt; badge.classList.add('fade-in'), 100);
+}
+showVersionSplash();
+
+// AUTO-SAVE LOOP
+setInterval(() =&gt; {
+    autoSave();
+}, 5000);
+
+// Global shortcut keys
+window.onkeydown = (e) =&gt; {
+    if (e.ctrlKey || e.metaKey) {
+        if (e.key === 's') { e.preventDefault(); document.getElementById('saveBtn').click(); }
+        if (e.key === 'z') { e.preventDefault(); if (typeof window.undo === 'function') window.undo(); }
+        if (e.key === 'y') { e.preventDefault(); if (typeof window.redo === 'function') window.redo(); }
+    }
+    if (e.key === 'p') {
+        if (!e.ctrlKey && !e.metaKey && !document.querySelector('.modal-overlay')) {
+            if (window.MaestroPreview) window.MaestroPreview.toggle();
+        }
+    }
+};
+
+window.onbeforeunload = () =&gt; {
+    autoSave();
+};
+
+```
+
+---
+
+
+</div>
+
+</body>
+
+</html>
